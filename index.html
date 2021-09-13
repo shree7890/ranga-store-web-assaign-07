@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amazing shopping-mall website</title>
+  <title>Shopping-Mall</title>
+  <!-- custom css -->
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Latest compiled and minified CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -14,27 +15,58 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/amazon.png" type="image/x-icon">
 </head>
 
 <body>
-  <header></header>
+  <header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <div class="container">
+        <a class="navbar-brand fs-2 fw-bold" id="nav-bd" href="index.html">Shopping Mall</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-5">
+            <li class="nav-item">
+              <a class="nav-link text-primary active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Flashsell</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#"><i class="bi bi-cart-plus"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
   <main class="main">
-    <div class="container py-5">
-      <!-- input field -->
+    <div class="container py-4">
+      <!-- input field search box-->
       <div class="row">
         <div class="col-lg-4"></div>
         <div class="col-lg-4">
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Search your product" aria-label="Recipient's username"
-              aria-describedby="button-addon2">
-            <button class="btn btn-outline-primary" type="button" id="button-addon2">Button</button>
+            <input type="text" class="form-control search-field" placeholder="Search your product"
+              aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button id="search-box" class="btn" type="button" id="button-addon2">Search</button>
           </div>
         </div>
         <div class="col-lg-4"></div>
       </div>
     </div>
     </div>
-    <!-- product details -->
+    <!-- product single details -->
     <div class="container">
       <div class="row">
         <div class="col ">
@@ -66,32 +98,32 @@
               </thead>
               <tbody>
                 <tr>
-                  <th>Total Added-Products:</th>
-                  <td> <span id="total-Products">0</span></td>
+                  <th class="text-white">Total Added-Products:</th>
+                  <td> <span class="text-white" id="total-Products">0</span></td>
                   <td></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <th>Price:</th>
-                  <td>$ <span id="price">0</span></td>
+                  <th class="text-white">Price:</th>
+                  <td class="text-white">$ <span id="price">0</span></td>
                   <td></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <th>Delivery-Charge:</th>
-                  <td>$ <span id="delivery-charge">20</span></td>
+                  <th class="text-white">Delivery-Charge:</th>
+                  <td class="text-white">$ <span id="delivery-charge">20</span></td>
                   <td></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <th>Total-Tax:</th>
-                  <td>$ <span id="total-tax">0</span></td>
+                  <th class="text-white">Total-Tax:</th>
+                  <td class="text-white">$ <span id="total-tax">0</span></td>
                   <td></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <th scope="row">Total</th>
-                  <td colspan="2">$ <span id="total">0</span></td>
+                  <th class="text-white" scope="row">Total</th>
+                  <td class="text-white" colspan="2">$ <span id="total">0</span></td>
                   <td></td>
                 </tr>
               </tbody>
@@ -104,7 +136,10 @@
       </div>
     </div>
   </main>
-  <footer></footer>
+  <!-- footer -->
+  <footer class=" bg-black py-1">
+    <p class="text-white text-center mt-2">Copyright &copy; 2021 Development by | Shreekanta</p>
+  </footer>
 
   <!-- add javascript  file  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
