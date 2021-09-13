@@ -1,7 +1,7 @@
 body {
-  overflow-x: hidden;
+   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
-}
+} 
 .search-field {
   border: none;
   border-radius: 50px;
@@ -83,4 +83,48 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+}
+.detail{
+  width:600px;
+  margin: 0 auto;
+}
+.span{
+  color: #F57224;
+}
+.price, .danger{
+  color:#0E0E52 ;
+}
+.image-style{
+  height: 250px;
+  width: 200px;
+}
+.card{
+  width: 350px;
+  margin: 0 auto;
+  padding: 14px;
+  margin-bottom: 10px;
+}
+.title{
+color:#0E0E52 ;
+}
+.descrip{
+color:#AD3534;
+font-style: italic;
+}
+.text{
+  color: #DF3744;
+}
+.primary{
+  color: #F26861;
+}
+#addToCart-btn{
+  background-color: #E2A86F;
+  color: #ffffff;
+}
+#details-btn{
+  background-color:#FF4E57 ;
+  color: #ffffff;
+}
+.heading{
+  color: #AD3534;
 }
